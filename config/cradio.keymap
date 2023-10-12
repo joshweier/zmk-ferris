@@ -129,9 +129,9 @@
 
         sys_layer {
             bindings = <
-             &none &none &none &none &none   &none &none &mmv MOVE_UP &none &none 
-&kp C_PREV &kp C_PP &kp C_NEXT &none &none   &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mwh SCROLL_UP 
-        &bt BT_CLR &none &none &none &none   &none &none &none &none &mwh SCROLL_DOWN 
+             &none &none &none &none &none   &none &none &none &none &none 
+&kp C_PREV &kp C_PP &kp C_NEXT &none &none   &none &none &none &none &none
+        &bt BT_CLR &none &none &none &none   &none &none &none &none &none
                            &mkp RCLK &to 0   &to 0 &mkp LCLK 
             >;
         };
