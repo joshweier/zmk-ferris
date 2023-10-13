@@ -16,17 +16,17 @@
 #define HM_TAPPING_TERM 200
 #define HM_TAPPING_TERM_FAST 150
 
-/ {
+&num_word {
+    layers = <4>;
+    continue-list = <
+	BACKSPACE DELETE DOT COMMA
+	SLASH ASTERISK PLUS MINUS EQUAL DOLLAR
+	RS(SPACE)
+    >;
+    ignore-modifiers;  // modifiers don't deactivate the layer
+};
 
-	&num_word {
-	    layers = <num_layer>;
-	    continue-list = <
-		BACKSPACE DELETE DOT COMMA
-		SLASH ASTERISK PLUS MINUS EQUAL DOLLAR
-		RS(SPACE)
-	    >;
-	    ignore-modifiers;  // modifiers don't deactivate the layer
-	};
+/ {
 
 	combos {
 		compatible = "zmk,combos";
