@@ -16,6 +16,9 @@
 #define HM_TAPPING_TERM 200
 #define HM_TAPPING_TERM_FAST 150
 
+#define COMBO_TIMEOUT 50
+#define COMBO_GLOBAL_QUICKTAP 100
+
 &num_word {
     layers = <4>;
     continue-list = <
@@ -32,39 +35,45 @@
 		compatible = "zmk,combos";
 
 		combo_shift {
-		    timeout-ms = <50>;
+		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <31 32>;
 		    bindings = <&caps_word>;
+		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 		combo_numword {
-		    timeout-ms = <50>;
+		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <30 33>;
 		    bindings = <&num_word>;
+		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 		combo_tab {
-		    timeout-ms = <50>;
+		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <0 9>;
 		    bindings = <&kp TAB>;
+		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 		combo_enter {
-		    timeout-ms = <50>;
+		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <10 19>;
 		    bindings = <&kp RET>;
+		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 		combo_enter_r {
-		    timeout-ms = <50>;
+		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <16 17>;
 		    bindings = <&kp RET>;
+		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 		combo_sys {
-		    timeout-ms = <50>;
+		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <20 29>;
 		    bindings = <&to 3>;
+		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 	    };
