@@ -9,9 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "includes/combos.dtsi"
-#include "includes/behavior_homerow.dtsi"
-#include "includes/behavior_misc.dtsi"
-#include "includes/behavior_tapdance.dtsi"
+#include "includes/behaviors_homerow.dtsi"
+#include "includes/behaviors_misc.dtsi"
+#include "includes/behaviors_tapdance.dtsi"
 #include "includes/macros.dtsi"
 
 &num_word {
