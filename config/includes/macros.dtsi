@@ -1,0 +1,12 @@
+/ {
+
+        macros {
+                ZMK_MACRO(right_arrow,
+                        bindings = <&macro_tap &kp MINUS &kp GT>;
+                )
+
+                ZMK_MACRO(left_arrow,
+                        bindings = <&macro_tap &kp LT &kp MINUS>;
+                )
+        };
+};
