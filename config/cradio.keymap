@@ -9,54 +9,162 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+	// global-quick-tap-ms = <75>;
+
 	combos {
 		compatible = "zmk,combos";
+
 		combo_shift {
 		    timeout-ms = <50>;
 		    key-positions = <31 32>;
 		    bindings = <&caps_word>;
 		};
+
+		combo_numword {
+		    timeout-ms = <50>;
+		    key-positions = <30 33>;
+		    bindings = <&num_word>;
+		};
+
 		combo_tab {
 		    timeout-ms = <50>;
 		    key-positions = <0 9>;
 		    bindings = <&kp TAB>;
 		};
+
 		combo_enter {
 		    timeout-ms = <50>;
 		    key-positions = <10 19>;
 		    bindings = <&kp RET>;
 		};
+
 		combo_enter_r {
 		    timeout-ms = <50>;
 		    key-positions = <16 17>;
 		    bindings = <&kp RET>;
 		};
+
 		combo_sys {
 		    timeout-ms = <50>;
 		    key-positions = <20 29>;
 		    bindings = <&to 3>;
 		};
+
 	    };
 
 	behaviors {
+		// Positional Homerow mods
+		// Homerow mods that prevent accidental activations when rolling keys,
+		// such as when typing `st` or `ne` on colemak-dh layouts or `as` on
+		// qwerty.
+		//
+		// Works by only allowing a mod to activate within tapping-term if
+		// it's on the opposite side of the keyboard or on the same side thumb
+		// keys.
+
+		// Further optimization using urob's timerless homerow mods method:
+		// https://github.com/urob/zmk-config#timeless-homerow-mods
+
+		hm_l: homerow_mods_left {
+		    compatible = "zmk,behavior-hold-tap";
+		    label = "HOMEROW_MODS_LEFT";
+		    #binding-cells = <2>;
+		    bindings = <&kp>,  <&kp>;
+
+		    flavor = "balanced";
+		    tapping-term-ms = <HM_TAPPING_TERM>;
+		    quick-tap-ms = <175>;                // repeat on tap-into-hold
+		    global-quick-tap-ms = <150>;         // requires PR #1387
+		    hold-trigger-key-positions = <KEYS_R KEYS_T>;
+		    hold-trigger-on-release;             // requires PR #1423
+		};
+
+		hm_r: homerow_mods_right {
+		    compatible = "zmk,behavior-hold-tap";
+		    label = "HOMEROW_MODS_RIGHT";
+		    #binding-cells = <2>;
+		    bindings = <&kp>, <&kp>;
+
+		    flavor = "balanced";
+		    tapping-term-ms = <HM_TAPPING_TERM>;
+		    quick_tap_ms = <175>;
+		    global-quick-tap-ms = <150>;         // requires PR #1387
+		    hold-trigger-key-positions = <KEYS_L KEYS_T>;
+		    hold-trigger-on-release;             // requires PR #1423
+		};
+
+		// Positional Homerow mods for shift
+		// Use faster tapping term and disable some features that may
+		// cause false negatives.
+		hm_shift_l: hm_shift_l {
+		    compatible = "zmk,behavior-hold-tap";
+		    label = "HOMEROW_MODS_FAST_LEFT";
+		    #binding-cells = <2>;
+		    bindings = <&kp>, <&kp>;
+
+		    flavor = "balanced";
+		    tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+		    quick_tap_ms = <175>;
+		    // global-quick-tap-ms = <150>;         // requires PR #1387
+		    hold-trigger-key-positions = <KEYS_R KEYS_T>;
+		    // hold-trigger-on-release;             // requires PR #1423
+		};
+
+		hm_shift_r: hm_shift_r {
+		    compatible = "zmk,behavior-hold-tap";
+		    label = "HOMEROW_MODS_FAST_RIGHT";
+		    #binding-cells = <2>;
+		    bindings = <&kp>, <&kp>;
+
+		    flavor = "balanced";
+		    tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+		    quick_tap_ms = <175>;
+		    // global-quick-tap-ms = <150>;         // requires PR #1387
+		    hold-trigger-key-positions = <KEYS_L KEYS_T>;
+		    // hold-trigger-on-release;             // requires PR #1423
+		};
+
+		/*
+		 * Non-Positional Homerow Mods
+		 * Used for &mm_grescm_gui behavior on left hand.
+		 *
+		 * Usage: &hm LSHFT T
+		 * Tap: T
+		 * Tap-Tap-Hold: Repeat T
+		 * Hold: LSHIFT
+		 */
 		hm: homerow_mods {
 		    compatible = "zmk,behavior-hold-tap";
 		    label = "HOMEROW_MODS";
 		    #binding-cells = <2>;
-		    tapping-term-ms = <180>;
-		    quick_tap_ms = <0>;
+		    bindings = <&kp>, <&kp>;
+
+		    flavor = "balanced";
+		    tapping-term-ms = <HM_TAPPING_TERM>;
+		    quick_tap_ms = <200>;
+		};
+	 
+		/*
+		hm: homerow_mods {
+		    compatible = "zmk,behavior-hold-tap";
+		    label = "HOMEROW_MODS";
+		    #binding-cells = <2>;
+		    tapping-term-ms = <200>;
+		    quick_tap_ms = <200>;
 		    flavor = "tap-preferred";
 		    bindings = <&kp>, <&kp>;
-		};
+		};*/
+
 		ltf: layer_tap_fast {
 		    compatible = "zmk,behavior-hold-tap";
 		    label = "LAYER TAP FAST";
 		    #binding-cells = <2>;
 		    tapping-term-ms = <125>;
-		    quick_tap_ms = <200>;
+		    quick_tap_ms = <125>;
 		    flavor = "tap-preferred";
 		    bindings = <&mo>, <&kp>;
 		};
+
 		td_par: tdpar {
 		    compatible = "zmk,behavior-tap-dance";
 		    label = "TDPAR";
@@ -64,6 +172,7 @@
 		    tapping-term-ms = <150>;
 		    bindings = <&kp LPAR>, <&kp RPAR>;
 		};
+
 		td_brc: tdbrc {
 		    compatible = "zmk,behavior-tap-dance";
 		    label = "TDBRC";
@@ -71,6 +180,7 @@
 		    tapping-term-ms = <150>;
 		    bindings = <&kp LBRC>, <&kp RBRC>;
 		};
+
 		td_bkt: tdbkt {
 		    compatible = "zmk,behavior-tap-dance";
 		    label = "TDBKT";
@@ -78,6 +188,7 @@
 		    tapping-term-ms = <150>;
 		    bindings = <&kp LBKT>, <&kp RBKT>;
 		};
+
 		td_apos: tdapos {
 		    compatible = "zmk,behavior-tap-dance";
 		    label = "TDAPOS";
@@ -85,6 +196,7 @@
 		    tapping-term-ms = <150>;
 		    bindings = <&kp APOS>, <&kp PIPE>;
 		};
+
 	};
 
 	macros {
@@ -103,7 +215,7 @@
         default_layer {
             bindings = <
                 &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P
-                &hm LCTL A &hm LALT S &hm LG(LC(LALT)) D &hm LSHFT F &hm LGUI G     &hm RGUI H &hm RSHFT J &hm RG(RC(RALT)) K &hm RALT L &hm RCTRL SEMI
+                &hm_l LCTL A &hm_l LALT S &hm_l LG(LC(LALT)) D &hm_shift_l LSHFT F &hm_l LGUI G     &hm_r RGUI H &hm_shift_r RSHFT J &hm_r RG(RC(RALT)) K &hm_r RALT L &hm_r RCTRL SEMI
                 &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH
                          &ltf 2 ESC &kp SPACE     &kp BSPC &mo 1
             >;
