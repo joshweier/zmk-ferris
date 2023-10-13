@@ -38,42 +38,42 @@
 		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <31 32>;
 		    bindings = <&caps_word>;
-		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+		    // global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 		combo_numword {
 		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <30 33>;
 		    bindings = <&num_word>;
-		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+		    // global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 		combo_tab {
 		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <0 9>;
 		    bindings = <&kp TAB>;
-		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+		    // global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 		combo_enter {
 		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <10 19>;
 		    bindings = <&kp RET>;
-		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+		    // global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 		combo_enter_r {
 		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <16 17>;
 		    bindings = <&kp RET>;
-		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+		    // global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 		combo_sys {
 		    timeout-ms = <COMBO_TIMEOUT>;
 		    key-positions = <20 29>;
 		    bindings = <&to 3>;
-		    global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
+		    // global-quick-tap-ms = <COMBO_GLOBAL_QUICKTAP>;
 		};
 
 	    };
@@ -243,7 +243,7 @@
                 &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P
                 &hm_l LCTL A &hm_l LALT S &hm_l LG(LC(LALT)) D &hm_shift_l LSHFT F &hm_l LGUI G     &hm_r RGUI H &hm_shift_r RSHFT J &hm_r RG(RC(RALT)) K &hm_r RALT L &hm_r RCTRL SEMI
                 &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-                         &ltf 2 ESC &kp SPACE     &kp BSPC &mo 1
+                         &ltf 2 ESC &kp SPACE     &hm BSPC LSHFT &mo 1
             >;
         };
 
