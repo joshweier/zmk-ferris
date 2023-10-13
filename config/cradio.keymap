@@ -91,6 +91,10 @@
 		// Further optimization using urob's timerless homerow mods method:
 		// https://github.com/urob/zmk-config#timeless-homerow-mods
 
+		mt: mod_tap {
+		    quick-tap-ms = <175>;                // repeat on tap-into-hold
+		}
+
 		hm_l: homerow_mods_left {
 		    compatible = "zmk,behavior-hold-tap";
 		    label = "HOMEROW_MODS_LEFT";
