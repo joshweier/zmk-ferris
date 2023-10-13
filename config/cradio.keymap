@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "includes/combos.dtsi"
-#include "includes/behavior_homerows.dtsi"
+#include "includes/behavior_homerow.dtsi"
 #include "includes/behavior_misc.dtsi"
 #include "includes/behavior_tapdance.dtsi"
 #include "includes/macros.dtsi"
