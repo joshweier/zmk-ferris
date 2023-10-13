@@ -16,9 +16,17 @@
 #define HM_TAPPING_TERM 200
 #define HM_TAPPING_TERM_FAST 150
 
-/ {
-	// global-quick-tap-ms = <75>;
+&num_word {
+    layers = <num_layer>;
+    continue-list = <
+        BACKSPACE DELETE DOT COMMA
+        SLASH ASTERISK PLUS MINUS EQUAL DOLLAR
+        RS(SPACE)
+    >;
+    ignore-modifiers;  // modifiers don't deactivate the layer
+};
 
+/ {
 	combos {
 		compatible = "zmk,combos";
 
@@ -82,7 +90,7 @@
 		    flavor = "balanced";
 		    tapping-term-ms = <HM_TAPPING_TERM>;
 		    quick-tap-ms = <175>;                // repeat on tap-into-hold
-		    // global-quick-tap-ms = <150>;         // requires PR #1387
+		    global-quick-tap-ms = <150>;         // requires PR #1387
 		    hold-trigger-key-positions = <KEYS_R KEYS_T>;
 		    hold-trigger-on-release;             // requires PR #1423
 		};
@@ -96,7 +104,7 @@
 		    flavor = "balanced";
 		    tapping-term-ms = <HM_TAPPING_TERM>;
 		    quick_tap_ms = <175>;
-		    // global-quick-tap-ms = <150>;         // requires PR #1387
+		    global-quick-tap-ms = <150>;         // requires PR #1387
 		    hold-trigger-key-positions = <KEYS_L KEYS_T>;
 		    hold-trigger-on-release;             // requires PR #1423
 		};
@@ -113,9 +121,9 @@
 		    flavor = "balanced";
 		    tapping-term-ms = <HM_TAPPING_TERM_FAST>;
 		    quick_tap_ms = <175>;
-		    // global-quick-tap-ms = <150>;         // requires PR #1387
+		    global-quick-tap-ms = <150>;         // requires PR #1387
 		    hold-trigger-key-positions = <KEYS_R KEYS_T>;
-		    // hold-trigger-on-release;             // requires PR #1423
+		    hold-trigger-on-release;             // requires PR #1423
 		};
 
 		hm_shift_r: hm_shift_r {
@@ -127,9 +135,9 @@
 		    flavor = "balanced";
 		    tapping-term-ms = <HM_TAPPING_TERM_FAST>;
 		    quick_tap_ms = <175>;
-		    // global-quick-tap-ms = <150>;         // requires PR #1387
+		    global-quick-tap-ms = <150>;         // requires PR #1387
 		    hold-trigger-key-positions = <KEYS_L KEYS_T>;
-		    // hold-trigger-on-release;             // requires PR #1423
+		    hold-trigger-on-release;             // requires PR #1423
 		};
 
 		/*
@@ -253,6 +261,15 @@
 &kp C_PREV &kp C_PP &kp C_NEXT &none &none   &none &none &none &none &none
         &bt BT_CLR &none &none &none &none   &none &none &none &none &none
                            &to 0 &to 0   &to 0 &to 0
+            >;
+        };
+
+        num_layer {
+            bindings = <
+        &none &none &none &none &none   &none &kp N1 &kp N2 &kp N3 &none 
+   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &none &kp N4 &kp N5 &kp N6 &none 
+   &kp N6 &kp N7 &kp N8 &kp N9 &kp N0   &none &kp N7 &kp N8 &kp N9 &kp N0 
+                        &trans &trans   &trans &trans 
             >;
         };
 
