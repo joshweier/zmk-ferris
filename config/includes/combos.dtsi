@@ -88,9 +88,23 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
-		combo_apos {
+		combo_arrow_left {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <20 21>;
+                    bindings = <&left_arrow>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+		combo_arrow_right {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <23 24>;
+                    bindings = <&right_arrow>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+		combo_apos {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <21 11>;
                     bindings = <&kp APOS>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
@@ -118,7 +132,7 @@
 
 		combo_tab_left {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <2 3>;
+                    key-positions = <0 9>;
                     bindings = <&kp TAB>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
