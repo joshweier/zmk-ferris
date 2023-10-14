@@ -2,12 +2,12 @@
 
         behaviors {
 
-		td_apos: tdapos {
+		td_wordcap: tdwordcap {
                     compatible = "zmk,behavior-tap-dance";
-                    label = "TDAPOS";
+                    label = "WORDCAP";
                     #binding-cells = <0>;
                     tapping-term-ms = <150>;
-                    bindings = <&kp APOS>, <&kp PIPE>;
+                    bindings = <&kp BSPC>, <&caps_word>;
                 };
 
 	};
