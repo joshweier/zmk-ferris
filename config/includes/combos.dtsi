@@ -29,32 +29,6 @@
                 };
 
 		// 
-		// OBSOLETE
-		// 
-
-		/*
-                combo_enter_r {
-                    timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <16 17>;
-                    bindings = <&kp RET>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };
-
-		combo_tab {
-                    timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <0 9>;
-                    bindings = <&kp TAB>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };
-
-                combo_enter {
-                    timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <10 19>;
-                    bindings = <&kp RET>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };*/
-
-		// 
 		// Left hand
 		// 
 
