@@ -28,6 +28,35 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
+		// 
+		// OBSOLETE
+		// 
+
+                combo_enter_r {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <16 17>;
+                    bindings = <&kp RET>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+		combo_tab {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <0 9>;
+                    bindings = <&kp TAB>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_enter {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <10 19>;
+                    bindings = <&kp RET>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+		// 
+		// Left hand
+		// 
+
 		combo_esc_left {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <1 2>;
@@ -70,10 +99,10 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
-		combo_period {
+		combo_apos {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <11 21>;
-                    bindings = <&kp PERIOD>;
+                    bindings = <&kp APOS>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
@@ -98,13 +127,6 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
-		combo_tab {
-                    timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <0 9>;
-                    bindings = <&kp TAB>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };
-
 		combo_tab_left {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <11 12>;
@@ -112,19 +134,9 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
-                combo_enter {
-                    timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <10 19>;
-                    bindings = <&kp RET>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };
-
-                combo_enter_r {
-                    timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <16 17>;
-                    bindings = <&kp RET>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };
+		// 
+		// Right hand
+		// 
 
                 combo_backspace {
                     timeout-ms = <COMBO_TIMEOUT>;
