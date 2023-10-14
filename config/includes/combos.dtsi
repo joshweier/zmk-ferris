@@ -81,7 +81,7 @@
 
 		combo_enter_left {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <2 3>;
+                    key-positions = <12 13>;
                     bindings = <&kp ENTER>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
@@ -144,7 +144,7 @@
 
 		combo_tab_left {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <11 12>;
+                    key-positions = <2 3>;
                     bindings = <&kp TAB>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
