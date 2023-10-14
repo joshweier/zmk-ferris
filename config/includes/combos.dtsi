@@ -71,7 +71,7 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
-		combo_amp {
+		combo_at {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <1 11>;
                     bindings = <&kp AT>;
