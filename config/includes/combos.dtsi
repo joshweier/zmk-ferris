@@ -225,14 +225,14 @@
                 combo_lbrkt {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <25 26>;
-                    bindings = <&kp LBRKT>;
+                    bindings = <&kp LBKT>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
                 combo_rbrkt {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <28 29>;
-                    bindings = <&kp RBRKT>;
+                    bindings = <&kp RBKT>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
