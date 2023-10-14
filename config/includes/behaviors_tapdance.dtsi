@@ -2,30 +2,6 @@
 
         behaviors {
 
-                td_par: tdpar {
-                    compatible = "zmk,behavior-tap-dance";
-                    label = "TDPAR";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <150>;
-                    bindings = <&kp LPAR>, <&kp RPAR>;
-                };
-
-                td_brc: tdbrc {
-                    compatible = "zmk,behavior-tap-dance";
-                    label = "TDBRC";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <150>;
-                    bindings = <&kp LBRC>, <&kp RBRC>;
-                };
-
-                td_bkt: tdbkt {
-                    compatible = "zmk,behavior-tap-dance";
-                    label = "TDBKT";
-                    #binding-cells = <0>;
-                    tapping-term-ms = <150>;
-                    bindings = <&kp LBKT>, <&kp RBKT>;
-                };
-
 		td_apos: tdapos {
                     compatible = "zmk,behavior-tap-dance";
                     label = "TDAPOS";
@@ -33,5 +9,6 @@
                     tapping-term-ms = <150>;
                     bindings = <&kp APOS>, <&kp PIPE>;
                 };
+
 	};
 };

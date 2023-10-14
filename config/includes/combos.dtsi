@@ -32,6 +32,7 @@
 		// OBSOLETE
 		// 
 
+		/*
                 combo_enter_r {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <16 17>;
@@ -51,11 +52,25 @@
                     key-positions = <10 19>;
                     bindings = <&kp RET>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };
+                };*/
 
 		// 
 		// Left hand
 		// 
+
+		combo_quote {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <21 22>;
+                    bindings = <&kp DQT>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+		combo_grave {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <11 12>;
+                    bindings = <&kp GRAVE>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
 
 		combo_esc_left {
                     timeout-ms = <COMBO_TIMEOUT>;
@@ -101,7 +116,7 @@
 
 		combo_apos {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <11 21>;
+                    key-positions = <23 24>;
                     bindings = <&kp APOS>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
