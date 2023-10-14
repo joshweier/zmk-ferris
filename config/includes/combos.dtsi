@@ -10,7 +10,7 @@
                 combo_sys {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <20 29>;
-                    bindings = <&to 2>;
+                    bindings = <&to 3>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
@@ -225,14 +225,14 @@
 
                 combo_lparan {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <15 16>;
+                    key-positions = <16 17>;
                     bindings = <&kp LPAR>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
                 combo_rparan {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <18 19>;
+                    key-positions = <17 18>;
                     bindings = <&kp RPAR>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };

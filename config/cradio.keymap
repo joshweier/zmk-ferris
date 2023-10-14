@@ -15,7 +15,7 @@
 #include "includes/macros.dtsi"
 
 &num_word {
-    layers = <3>;
+    layers = <2>;
     continue-list = <
 	BACKSPACE DELETE DOT COMMA
 	SLASH ASTERISK PLUS MINUS EQUAL DOLLAR
@@ -34,7 +34,7 @@
                 &kp Q &kp W &kp E &kp R &kp T     &kp Y &kp U &kp I &kp O &kp P
 &hm_l LCTL A &hm_l LALT S &hm_l LG(LC(LALT)) D &hm_shift_l LSHFT F &hm_l LGUI G     &hm_r RGUI H &hm_shift_r RSHFT J &hm_r RG(RC(RALT)) K &hm_r RALT L &hm_r RCTRL SEMI
                 &kp Z &kp X &kp C &kp V &kp B     &kp N &kp M &kp COMMA &kp DOT &kp FSLH
-                         &ltf 1 ESC &kp SPACE     &mt LSFT BSPC &mo 2
+                         &ltf 1 ESC &kp SPACE     &sk LSFT &mo 2
             >;
         };
 
@@ -47,21 +47,21 @@
             >;
         };
 
-        sys_layer {
-            bindings = <
-             &none &none &none &none &none   &none &none &none &none &none 
-&kp C_PREV &kp C_PP &kp C_NEXT &none &none   &none &none &none &none &none
-        &bt BT_CLR &none &none &none &none   &none &none &none &none &none
-                           &to 0 &to 0   &to 0 &to 0
-            >;
-        };
-
         num_layer {
             bindings = <
         &none &none &none &none &none   &none &kp N1 &kp N2 &kp N3 &none 
    &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &none &kp N4 &kp N5 &kp N6 &none 
    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0   &none &kp N7 &kp N8 &kp N9 &kp N0 
                         &trans &trans   &trans &trans 
+            >;
+        };
+
+        sys_layer {
+            bindings = <
+             &none &none &none &none &none   &none &none &none &none &none 
+&kp C_PREV &kp C_PP &kp C_NEXT &none &none   &none &none &none &none &none
+        &bt BT_CLR &none &none &none &none   &none &none &none &none &none
+                           &to 0 &to 0   &to 0 &to 0
             >;
         };
 
