@@ -7,6 +7,13 @@
         combos {
                 compatible = "zmk,combos";
 
+                combo_sys {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <20 29>;
+                    bindings = <&to 3>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
                 combo_capword {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <31 32>;
@@ -133,10 +140,87 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
-                combo_sys {
+                combo_caret {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <20 29>;
-                    bindings = <&to 3>;
+                    key-positions = <5 15>;
+                    bindings = <&kp CARET>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_plus {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <6 16>;
+                    bindings = <&kp PLUS>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_aster {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <7 17>;
+                    bindings = <&kp ASTRK>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_amp {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <8 18>;
+                    bindings = <&kp AMPS>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_underscore {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <15 25>;
+                    bindings = <&kp UNDER>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_minus {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <16 26>;
+                    bindings = <&kp MINUS>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_fslash {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <17 27>;
+                    bindings = <&kp FSLH>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_pipe {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <18 28>;
+                    bindings = <&kp PIPE>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_lparan {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <15 16>;
+                    bindings = <&kp LPAR>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_rparan {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <18 19>;
+                    bindings = <&kp RPAR>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_lbrkt {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <25 26>;
+                    bindings = <&kp LBRKT>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
+                combo_rbrkt {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <28 29>;
+                    bindings = <&kp RBRKT>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
