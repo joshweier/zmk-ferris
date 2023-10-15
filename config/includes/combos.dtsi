@@ -253,6 +253,13 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
+                combo_exclaim {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <18 19>;
+                    bindings = <&kp EXCL>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
             };
 
     };
