@@ -34,15 +34,15 @@
 
 		combo_quote {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <21 22>;
+                    key-positions = <11 12>;
                     bindings = <&kp DQT>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
 		combo_grave {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <10 11>;
-                    bindings = <&kp GRAVE>;
+                    key-positions = <11 21>;
+                    bindings = <&kp APOS>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
@@ -104,7 +104,7 @@
 
 		combo_apos {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <21 11>;
+                    key-positions = <10 11>;
                     bindings = <&kp APOS>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
@@ -227,14 +227,14 @@
 
                 combo_lbrc {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <26 27>;
+                    key-positions = <15 16>;
                     bindings = <&kp LBRC>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
                 combo_rbrc {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <27 28>;
+                    key-positions = <18 19>;
                     bindings = <&kp RBRC>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
@@ -255,7 +255,7 @@
 
                 combo_exclaim {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <18 19>;
+                    key-positions = <26 27>;
                     bindings = <&kp EXCL>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
