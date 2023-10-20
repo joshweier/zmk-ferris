@@ -53,13 +53,6 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
-		/*combo_enter_left {
-                    timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <12 13>;
-                    bindings = <&kp ENTER>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };*/
-
 		combo_at {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <1 11>;
