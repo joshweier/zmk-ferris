@@ -34,7 +34,7 @@
 
 		combo_quote {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <11 12>;
+                    key-positions = <13 14>;
                     bindings = <&kp DQT>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
@@ -141,6 +141,13 @@
 		// Right hand
 		// 
 
+		combo_enter_right {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <16 17>;
+                    bindings = <&kp ENTER>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
                 combo_backspace {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <6 7>;
@@ -213,14 +220,14 @@
 
                 combo_lparan {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <16 17>;
+                    key-positions = <11 12>;
                     bindings = <&kp LPAR>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
                 combo_rparan {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <17 18>;
+                    key-positions = <12 13>;
                     bindings = <&kp RPAR>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
