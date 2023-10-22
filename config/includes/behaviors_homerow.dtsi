@@ -60,8 +60,8 @@
 
                     flavor = "balanced";
                     tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-                    quick_tap_ms = <175>;
-                    require-prior-idle-ms = <200>;
+                    quick_tap_ms = <250>;
+                    require-prior-idle-ms = <250>;
                     hold-trigger-key-positions = <KEYS_R KEYS_T>;
                     hold-trigger-on-release;
                 };
