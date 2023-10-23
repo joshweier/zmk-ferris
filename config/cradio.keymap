@@ -27,7 +27,6 @@
 	RS(SPACE)
     >;
     ignore-modifiers;  // modifiers don't deactivate the layer
-    release-after-ms = <1000>;
 };
 
 / {
