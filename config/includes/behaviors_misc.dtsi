@@ -12,14 +12,13 @@
                     bindings = <&mo>, <&kp>;
                 };
 
-		st: sticky_tap {
-                    compatible = "zmk,behavior-hold-tap";
-                    label = "STICKY TAP";
+		sm: smart_shift {
+                    compatible = "zmk,behavior-mod-morph";
+                    label = "SMART SHIFT";
                     #binding-cells = <2>;
                     tapping-term-ms = <150>;
-                    quick_tap_ms = <150>;
-                    flavor = "tap-preferred";
-                    bindings = <&sk>, <&kp>;
+                    mods = <(MOD_LSFT)>;
+                    bindings = <&sk LSFT>, <&caps_word>;
                 };
 
 	};
