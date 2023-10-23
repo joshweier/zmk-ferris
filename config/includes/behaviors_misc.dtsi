@@ -21,13 +21,14 @@
                 };
 
 		smn: smart_number {
-                    compatible = "zmk,behavior-mod-morph";
+                    compatible = "zmk,behavior-hold-tap";
                     label = "SMART NUMBER";
                     #binding-cells = <0>;
-                    mods = <(MOD_LSFT)>;
+                    tapping-term-ms = <125>;
+                    quick_tap_ms = <125>;
+                    flavor = "tap-preferred";
                     bindings = <&mo 2>, <&num_word>;
                 };
-
 
 	};
 
