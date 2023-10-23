@@ -14,6 +14,7 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
+		/*
                 combo_capword {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <31 32>;
@@ -26,7 +27,7 @@
                     key-positions = <30 33>;
                     bindings = <&num_word>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };
+                };*/
 
 		// 
 		// Left hand
