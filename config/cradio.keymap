@@ -50,7 +50,7 @@
         num_layer {
             bindings = <
         &none &none &none &none &none   &none &none &none &none &none 
-   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &none &none &none &none &COLON 
+   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &none &none &none &none &kp COLON 
    &kp N6 &kp N7 &kp N8 &kp N9 &kp N0   &none &none &none &kp DOT &none 
                         &trans &trans   &trans &trans 
             >;
