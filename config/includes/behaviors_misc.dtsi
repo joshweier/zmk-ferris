@@ -15,6 +15,7 @@
 		sm: smart_shift {
                     compatible = "zmk,behavior-mod-morph";
                     label = "SMART SHIFT";
+                    #binding-cells = <0>;
                     tapping-term-ms = <150>;
                     mods = <(MOD_LSFT)>;
                     bindings = <&sk LSFT>, <&caps_word>;
