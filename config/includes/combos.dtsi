@@ -1,6 +1,6 @@
 
 #define COMBO_TIMEOUT 50
-#define COMBO_PRIOR_IDLE 150
+#define COMBO_PRIOR_IDLE 125
 
 / {
 
@@ -13,21 +13,6 @@
                     bindings = <&to 3>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
-
-		/*
-                combo_capword {
-                    timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <31 32>;
-                    bindings = <&caps_word>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };
-
-                combo_numword {
-                    timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <30 33>;
-                    bindings = <&num_word>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };*/
 
 		// 
 		// Left hand
@@ -98,7 +83,7 @@
 
 		combo_apos {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <2 3>;
+                    key-positions = <3 4>;
                     bindings = <&kp APOS>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
