@@ -83,7 +83,7 @@
 
 		combo_apos {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <3 4>;
+                    key-positions = <12 13>;
                     bindings = <&kp APOS>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
@@ -206,28 +206,28 @@
 
                 combo_rparan {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <12 13>;
+                    key-positions = <17 18>;
                     bindings = <&kp RPAR>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
                 combo_lbrc {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <15 16>;
+                    key-positions = <10 11>;
                     bindings = <&kp LBRC>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
                 combo_rbrc {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <18 19>;
+                    key-positions = <19 20>;
                     bindings = <&kp RBRC>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
                 combo_lbrkt {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <25 26>;
+                    key-positions = <20 21>;
                     bindings = <&kp LBKT>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
