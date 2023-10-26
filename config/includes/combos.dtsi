@@ -220,7 +220,7 @@
 
                 combo_rbrc {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <19 20>;
+                    key-positions = <18 18>;
                     bindings = <&kp RBRC>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
