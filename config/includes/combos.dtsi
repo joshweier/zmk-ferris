@@ -39,6 +39,13 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
+		combo_esc_split {
+                    timeout-ms = <COMBO_TIMEOUT>;
+                    key-positions = <10 19>;
+                    bindings = <&kp ESC>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                };
+
 		combo_at {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <1 11>;
