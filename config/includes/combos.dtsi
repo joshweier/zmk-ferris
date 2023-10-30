@@ -1,6 +1,6 @@
 
 #define COMBO_TIMEOUT 50
-#define COMBO_PRIOR_IDLE 125
+#define COMBO_PRIOR_IDLE 100
 
 / {
 
