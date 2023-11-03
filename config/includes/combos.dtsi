@@ -1,5 +1,5 @@
 
-#define COMBO_TIMEOUT 50
+#define COMBO_TIMEOUT 40
 #define COMBO_PRIOR_IDLE 100
 
 / {
@@ -95,12 +95,12 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
-		combo_bslash {
+		/*combo_bslash {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <12 22>;
                     bindings = <&kp BSLH>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };
+                };*/
 
 		combo_equal {
                     timeout-ms = <COMBO_TIMEOUT>;
@@ -190,10 +190,10 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
-                combo_fslash {
+                combo_bslash {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <17 27>;
-                    bindings = <&kp FSLH>;
+                    bindings = <&kp BSLH>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
