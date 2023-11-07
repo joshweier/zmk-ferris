@@ -76,7 +76,7 @@
 
 		combo_arrow_left {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <20 21>;
+                    key-positions = <21 22>;
                     bindings = <&left_arrow>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
