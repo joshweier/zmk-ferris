@@ -1,5 +1,6 @@
 
-#define COMBO_TIMEOUT 40
+#define COMBO_TIMEOUT 50
+#define COMBO_TIMEOUT_FAST 25
 #define COMBO_PRIOR_IDLE 100
 
 / {
@@ -219,7 +220,7 @@
                 };
 
                 combo_lbrc {
-                    timeout-ms = <COMBO_TIMEOUT>;
+                    timeout-ms = <COMBO_TIMEOUT_FAST>;
                     key-positions = <10 11>;
                     bindings = <&kp LBRC>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
