@@ -21,7 +21,7 @@
 
 		combo_quote {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <13 14>;
+                    key-positions = <12 13>;
                     bindings = <&kp DQT>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
@@ -91,7 +91,7 @@
 
 		combo_apos {
                     timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <12 13>;
+                    key-positions = <13 14>;
                     bindings = <&kp APOS>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
