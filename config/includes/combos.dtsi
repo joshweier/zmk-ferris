@@ -1,4 +1,3 @@
-
 #define COMBO_TIMEOUT 45
 #define COMBO_TIMEOUT_FAST 30
 #define COMBO_PRIOR_IDLE 150
@@ -140,7 +139,7 @@
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <6 7>;
                     bindings = <&kp BSPC>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE_FAST>;
                 };
 
                 combo_del {
