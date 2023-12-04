@@ -33,18 +33,11 @@
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
-		combo_esc_left {
-                    timeout-ms = <COMBO_TIMEOUT>;
-                    key-positions = <1 2>;
-                    bindings = <&kp ESC>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
-                };
-
 		combo_esc_split {
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <10 19>;
                     bindings = <&kp ESC>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+                    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
 		combo_at {
@@ -121,7 +114,6 @@
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <0 9>;
                     bindings = <&kp TAB>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
                 };
 
 		// 
@@ -132,7 +124,6 @@
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <16 17>;
                     bindings = <&kp ENTER>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE_FAST>;
                 };
 
                 combo_backspace {
