@@ -1,4 +1,5 @@
 #define COMBO_TIMEOUT 45
+#define COMBO_TIMEOUT_SLOW 100
 #define COMBO_TIMEOUT_FAST 30
 #define COMBO_PRIOR_IDLE 150
 #define COMBO_PRIOR_IDLE_FAST 100
@@ -34,7 +35,7 @@
                 };
 
 		combo_esc_split {
-                    timeout-ms = <COMBO_TIMEOUT>;
+                    timeout-ms = <COMBO_TIMEOUT_SLOW>;
                     key-positions = <10 19>;
                     bindings = <&kp ESC>;
                     require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
@@ -111,7 +112,7 @@
                 };
 
 		combo_tab_left {
-                    timeout-ms = <COMBO_TIMEOUT>;
+                    timeout-ms = <COMBO_TIMEOUT_SLOW>;
                     key-positions = <0 9>;
                     bindings = <&kp TAB>;
                 };
