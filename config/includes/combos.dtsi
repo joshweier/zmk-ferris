@@ -1,8 +1,9 @@
 #define COMBO_TIMEOUT 45
-#define COMBO_TIMEOUT_SLOW 100
 #define COMBO_TIMEOUT_FAST 30
+#define COMBO_TIMEOUT_SLOW 100
 #define COMBO_PRIOR_IDLE 150
 #define COMBO_PRIOR_IDLE_FAST 100
+#define COMBO_PRIOR_IDLE_SLOW 250
 
 / {
 
@@ -84,7 +85,7 @@
                 };
 
 		combo_apos {
-                    timeout-ms = <COMBO_TIMEOUT>;
+                    timeout-ms = <COMBO_TIMEOUT_FAST>;
                     key-positions = <2 3>;
                     bindings = <&kp APOS>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
@@ -138,7 +139,7 @@
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <7 8>;
                     bindings = <&kp DEL>;
-		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
+		    require-prior-idle-ms = <COMBO_PRIOR_IDLE_SLOW>;
                 };
 
                 combo_caret {
