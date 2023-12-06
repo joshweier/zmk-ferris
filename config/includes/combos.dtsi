@@ -85,7 +85,7 @@
                 };
 
 		combo_apos {
-                    timeout-ms = <COMBO_TIMEOUT_FAST>;
+                    timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <2 3>;
                     bindings = <&kp APOS>;
 		    require-prior-idle-ms = <COMBO_PRIOR_IDLE>;
