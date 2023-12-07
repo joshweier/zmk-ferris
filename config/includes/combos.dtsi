@@ -85,6 +85,7 @@
                 };
 
 		combo_apos {
+
                     timeout-ms = <COMBO_TIMEOUT>;
                     key-positions = <2 3>;
                     bindings = <&kp APOS>;
