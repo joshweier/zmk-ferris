@@ -32,7 +32,7 @@
       >;
       ignore-modifiers;  // modifiers don't deactivate the layer
     };
-  }
+  };
 
     keymap {
         compatible = "zmk,keymap";
