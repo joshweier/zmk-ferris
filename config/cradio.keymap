@@ -19,15 +19,18 @@
     quick-release;             // no double capitalization when rolling keys
 };
 
-&num_word {
+
+behaviors {
+  num_word: num_word {
     layers = <2>;
     continue-list = <
-	BACKSPACE DELETE DOT COMMA
-	SLASH ASTERISK PLUS MINUS EQUAL DOLLAR
-	RS(SPACE)
+      BACKSPACE DELETE DOT COMMA
+      SLASH ASTERISK PLUS MINUS EQUAL DOLLAR
+      RS(SPACE)
     >;
     ignore-modifiers;  // modifiers don't deactivate the layer
-};
+  };
+}
 
 / {
 
