@@ -68,7 +68,7 @@
             bindings = <
              &none &none &none &none &none   &none &none &none &none &bt BT_CLR
 &kp C_PREV &kp C_PP &kp C_NEXT &none &none   &none &none &none &none &none
-             &kp f13 &none &none &none &none   &none &none &none &none &kp f14
+             &kp F13 &none &none &none &none   &none &none &none &none &kp F14
                                &to 0 &to 0   &to 0 &to 0
             >;
         };
