@@ -1,14 +1,20 @@
 manifest:
   remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
     - name: urob
       url-base: https://github.com/urob
   projects:
+    # Upstream ZMK (pinned). Replaces the deprecated urob/zmk fork; pulls a
+    # matching Zephyr via its own import. Pinned to a known-good commit rather
+    # than @main so the build doesn't drift and break on its own.
     - name: zmk
-      remote: urob
-      revision: main
+      remote: zmkfirmware
+      revision: 0331b7d16e80954b807917f9323e59ffc1e3b626  # main (2026-04-19)
       import: app/west.yml
+    # num-word / smart-number behavior. SHA chosen to match the ZMK pin above.
     - name: zmk-auto-layer
       remote: urob
-      revision: v0.3
+      revision: dfa7c695ffde41ef8064245453595d50e198ae1d  # main (2026-04-19)
   self:
     path: config
