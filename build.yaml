@@ -16,5 +16,6 @@
 include:
   - board: nice_nano/nrf52840/zmk
     shield: cradio_left
+    snippet: studio-rpc-usb-uart
   - board: nice_nano/nrf52840/zmk
     shield: cradio_right
