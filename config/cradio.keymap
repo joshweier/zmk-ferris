@@ -30,7 +30,7 @@
         SLASH ASTERISK PLUS MINUS EQUAL DOLLAR
         RS(SPACE)
       >;
-      ignore-modifiers;  // modifiers don't deactivate the layer
+      ignore-numbers;  // number keys keep the layer active (num-word)
     };
   };
 
